@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tasks</title>
+	  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+</head>
+<body>
+	<h1><center>Todo App</center></h1>
+	  <form action="/add" method="post">
+        <p>Add Task:</p>
+        <input type="text" id="task" name="task" required>
+        <button type="submit">Add</button>
+    </form>
+
+	<ul> {% for task in tasks %}
+		<li>
+			
+			<a href={{url_for('delete', id=tasks.index(task))}}>{{ task }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
