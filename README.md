@@ -1,2 +1,2 @@
 # simpleProjects
-Small programs like a todo app to learn 
+Small programs to learn and have fun as a beginner :)
