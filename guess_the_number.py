@@ -1,11 +1,9 @@
-import os
 import sys
 import random 
 
 
 num = random.randint(1,15)
 
-os.system("cls")
 print("\n\t### Guess The Number ###")
 print("\nChoose a number between 1-15")
 tries = 3
